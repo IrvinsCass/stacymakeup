@@ -1,0 +1,100 @@
+.header {
+  @include flex(column);
+  width: 100%;
+  max-width: 1366px;
+  padding: 30px;
+  padding-bottom: 0;
+  position: fixed;
+  top: 0;
+  background-color: $light;
+}
+
+.header-nav {
+  @include flex(row, flex-end, space-around);
+  padding-left: 20px;
+  padding-right: 20px; 
+  color: $dark;
+  align-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  @media screen and (max-width: $portraitPhone) {
+    @include flex(row);
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+}
+
+.stacy-name {
+  display: block;
+  font-size: 33px;
+  font-family: $italicFont;
+  line-height: 25px;
+  text-align: center;
+
+  @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
+    font-size: 33px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: $portraitPhone) {
+    font-size: 33px;
+    width: 100%;
+  }
+}
+
+.anchor-link {
+  display: block;
+  text-decoration: none;
+  font-size: 30px;
+  color: $dark;
+  line-height: 16px;
+  text-align: center;
+
+  @media screen and (min-width: $largeScreen){
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: $mediumScreen) and (max-width: $largeScreen) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: $landscapePhone) and (max-width: $mediumScreen) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
+    margin-top: 22px;
+    font-size: 23px;
+  }
+
+  @media screen and (max-width: $portraitPhone) {
+    font-size: 23px;
+    margin-top: 15px;
+    width: 33%;
+  }
+}
+
+.header-img {
+  width: 100%;
+  max-width: 1366px;
+  overflow: hidden;
+  margin-top: 85px;
+
+  @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
+    margin-top: 123px;
+  }
+
+  @media screen and (max-width: $portraitPhone) {
+    margin-top: 127px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
