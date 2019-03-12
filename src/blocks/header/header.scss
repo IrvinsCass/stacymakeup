@@ -7,6 +7,14 @@
   position: fixed;
   top: 0;
   background-color: $light;
+
+  @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
+    padding: 15px 15px 0 15px;
+  }
+
+  @media screen and (max-width: $portraitPhone) {
+    padding: 15px 15px 0 15px;
+  }
 }
 
 .header-nav {
@@ -21,12 +29,13 @@
   @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-bottom: 10px;
   }
 
   @media screen and (max-width: $portraitPhone) {
     @include flex(row);
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -69,13 +78,13 @@
   }
 
   @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
-    margin-top: 22px;
+    margin-top: 10px;
     font-size: 23px;
   }
 
   @media screen and (max-width: $portraitPhone) {
     font-size: 23px;
-    margin-top: 15px;
+    margin-top: 10px;
     width: 33%;
   }
 }
@@ -87,11 +96,11 @@
   margin-top: 85px;
 
   @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
-    margin-top: 123px;
+    margin-top: 76px;
   }
 
   @media screen and (max-width: $portraitPhone) {
-    margin-top: 127px;
+    margin-top: 102px;
   }
 
   img {
