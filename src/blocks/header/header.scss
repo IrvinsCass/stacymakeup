@@ -2,11 +2,11 @@
   @include flex(column);
   width: 100%;
   max-width: 1366px;
-  padding: 30px;
   padding-bottom: 0;
   position: fixed;
   top: 0;
   background-color: $light;
+  z-index: 100;
 
   @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
     padding: 15px 15px 0 15px;
@@ -19,12 +19,14 @@
 
 .header-nav {
   @include flex(row, flex-end, space-around);
-  padding-left: 20px;
-  padding-right: 20px; 
   color: $dark;
+  padding: 20px 0;
   align-content: center;
   width: 100%;
-  margin-bottom: 30px;
+
+  @media screen and (min-width: $mediumScreen) and (max-width:$largeScreen) {
+    padding: 20px 0;
+  }
 
   @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
     flex-wrap: wrap;
@@ -45,6 +47,7 @@
   font-family: $italicFont;
   line-height: 25px;
   text-align: center;
+  font-weight: 100;
 
   @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
     font-size: 33px;
@@ -93,7 +96,7 @@
   width: 100%;
   max-width: 1366px;
   overflow: hidden;
-  margin-top: 85px;
+  margin-top: 65px;
 
   @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
     margin-top: 76px;

@@ -1,1 +1,46 @@
 @import './about/about';
+@import './why-me/why-me';
+@import './button/button';
+@import './my-cosmetics/my-cosmetics';
+@import './my-diplomas/my-diplomas';
+
+.article-block {
+  @include size(100%);
+  @include flex(column);
+  padding: 30px 0;
+}
+
+article:nth-child(even) {
+  background-color: $dark;
+}
+
+.article-header {
+  display: block;
+  font-family: $italicFont;
+  font-size: 40px;
+  line-height: 38px;
+  font-weight: 100;
+
+  &_light {
+    color: $light;
+    border-bottom: 1px solid $light;
+  }
+
+  &_dark {
+    color: $dark;
+    border-bottom: 1px solid $decor;
+  }
+}
+
+.anchor-point {
+  position: absolute;
+  top: -65px;
+
+  @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
+    top: -76px;
+  }
+
+  @media screen and (max-width: $portraitPhone) {
+    top: -102px;
+  }
+}

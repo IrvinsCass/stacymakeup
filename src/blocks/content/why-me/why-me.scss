@@ -1,0 +1,67 @@
+.why-me__content {
+  @include flex(row);
+  align-items: flex-start;
+  @include size(100%);
+  padding-top: 30px;
+
+  @media screen and (max-width: $portraitPhone) {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
+.why-me-block {
+  @include flex(column, center, flex-start);
+  @include size(20%, 100%);
+
+  @media screen and (max-width: $portraitPhone) {
+    @include size(40%, 100%);
+    margin-top: 20px;
+  }
+
+  i {
+    color: $light;
+    font-size: 80px;
+
+    @media screen and (min-width: $mediumScreen) and (max-width: $largeScreen) {
+      font-size: 75px;
+    }
+  
+    @media screen and (min-width: $landscapePhone) and (max-width: $mediumScreen) {
+      font-size: 73px;
+    }
+  
+    @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
+      font-size: 70px;
+    }
+  
+    @media screen and (max-width: $portraitPhone) {
+      font-size: 70px;
+    }
+  }
+}
+
+.description {
+  @include size(70%, 100%);
+  font-size: 20px;
+  line-height: 1;
+  color: $light;
+  text-align: center;
+  padding-top: 15px;
+
+  @media screen and (min-width: $mediumScreen) and (max-width: $largeScreen) {
+    font-size: 19px;
+  }
+
+  @media screen and (min-width: $landscapePhone) and (max-width: $mediumScreen) {
+    font-size: 17px;
+  }
+
+  @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
+    font-size: 17px;
+  }
+
+  @media screen and (max-width: $portraitPhone) {
+    font-size: 19px;
+  }
+}

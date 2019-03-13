@@ -1,0 +1,34 @@
+.my-cosmetics__content {
+  @include size (80%, 100%);
+  @include flex (row, center, space-evenly);
+  flex-wrap: wrap;
+}
+
+.brand {
+  @include flex(row);
+  @include size(26%, 100%);
+  margin-top: 25px;
+
+  @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
+    @include size(33%, 100%);
+  }
+
+  @media screen and (max-width: $portraitPhone) {
+    @include size(49%, 100%);
+  }
+}
+
+.brand-logo {
+  width: 50%;
+}
+
+.too-faced,
+.beauty-blender,
+.anastasia {
+  width: 100%;
+}
+
+.make-up-forever,
+.beauty-drugs {
+  width: 80%;
+}

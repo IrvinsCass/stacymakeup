@@ -1,0 +1,34 @@
+.register-button {
+  @include size(120px, 30px);
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  margin-top: 20px;
+  background-color: $decor;
+  color: $light;
+  font-size: 20px;
+  font-family: $italicFont;
+  font-weight: 100;
+
+  &:active {
+    background-color: #ac4e32;
+  }
+
+  @media screen and (min-width: $mediumScreen) and (max-width: $largeScreen) {
+    font-size: 19px;
+  }
+
+  @media screen and (min-width: $landscapePhone) and (max-width: $mediumScreen) {
+    font-size: 17px;
+  }
+
+  @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
+    @include size(135px, 37px);
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: $portraitPhone) {
+    @include size(135px, 37px);
+    font-size: 20px;
+  }
+}
