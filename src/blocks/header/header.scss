@@ -20,9 +20,12 @@
 .header-nav {
   @include flex(row, flex-end, space-around);
   color: $dark;
-  padding: 20px 0;
   align-content: center;
   width: 100%;
+
+  @media screen and (min-width: $largeScreen){
+    padding: 20px 0;
+  }
 
   @media screen and (min-width: $mediumScreen) and (max-width:$largeScreen) {
     padding: 20px 0;
