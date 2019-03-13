@@ -1,0 +1,63 @@
+.my-works__content {
+  @include size (80%, 100%);
+  @include flex (row);
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.example {
+  @include flex(row);
+  width: 23%;
+  overflow: hidden;
+  margin: 1%;
+  outline: 1px solid $dark;
+
+  @media screen and (min-width: $landscapePhone) and (max-width: $mediumScreen) {
+    width: 31%;
+  }
+
+  @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
+    width: 31%;
+  }
+
+  @media screen and (max-width: $portraitPhone) {
+    width: 47%;
+  }
+
+  &:hover {
+    outline: 1px solid $decor;
+  }
+}
+
+.preview {
+  display: block;
+  width: 100%;
+}
+
+.my-works__footer {
+  @include flex(row);
+  width: 80%;
+  margin-top: 15px;
+}
+
+.instagram {
+  display: block;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+
+  @media screen and (max-width: $portraitPhone) {
+    font-size: 20px;
+  }
+}
+
+.instagram-logo {
+  margin-left: 10px;
+  display: block;
+  @include size(30px);
+
+  @media screen and (max-width: $portraitPhone) {
+    @include size(40px);
+    margin: 0;
+  }
+}
