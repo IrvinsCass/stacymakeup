@@ -1,6 +1,7 @@
 .my-diplomas__content {
   @include size(80%, 100%);
   @include flex(row, center, space-between);
+  margin-bottom: 20px;
 
   @media screen and (max-width: $portraitPhone) {
     @include flex(column);

@@ -17,6 +17,7 @@
 
 .about-content {
   @include flex(row);
+  width: 90%;
 
   @media screen and (max-width: $portraitPhone) {
     flex-wrap: wrap-reverse;
@@ -46,13 +47,13 @@
 
 .about-text {
   @include flex(column);
-  padding: 20px 40px;
-  width: 50%;
+  padding: 0 20px;
+  width: 60%;
   max-width: 490px;
 
   @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
     padding: 0 20px;
-    width: 50%;
+    width: 60%;
   }
 
   @media screen and (max-width: $portraitPhone) {

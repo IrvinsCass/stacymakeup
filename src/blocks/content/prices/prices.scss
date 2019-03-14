@@ -1,0 +1,101 @@
+.prices__content {
+  @include size(80%, 100%);
+  @include flex(row, flex-start);
+  flex-wrap: wrap;
+  margin: 30px 0 20px 0;
+}
+
+.prices-column {
+  width: 19%;
+  @include flex(column);
+  margin: 0.5%;
+
+  @media screen and (min-width: $mediumScreen) and (max-width: $largeScreen) {
+    width: 32%;
+    margin-bottom: 22px;
+  }
+
+  @media screen and (min-width: $landscapePhone) and (max-width: $mediumScreen) {
+    width: 32%;
+    margin-bottom: 22px;
+  }
+
+  @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
+    width: 48%;
+    border-bottom: 1px solid $light;
+    margin-bottom: 22px;
+  }
+
+  @media screen and (max-width: $portraitPhone) {
+    width: 80%;
+    border-bottom: 1px solid $light;
+    margin-bottom: 22px;
+  }
+}
+
+.prices-column__header {
+  display: block;
+  width: 90%;
+  height: 60px;
+  font-family: $italicFont;
+  color: $light;
+  font-size: 21px;
+  line-height: 1;
+  font-weight: 100;
+  text-align: center;
+
+  @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
+    height: 50px;
+  }
+
+  @media screen and (max-width: $portraitPhone) {
+    height: 100%;
+  }
+}
+
+.prices-column__content {
+  margin-top: 15px;
+  height: 145px;
+  display: block;
+  width: 90%;
+  font-family: $mainFont;
+  color: $light;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 100;
+
+  @media screen and (min-width: $mediumScreen) and (max-width: $largeScreen) {
+    height: 90px;
+    font-size: 19px;
+  }
+
+  @media screen and (min-width: $landscapePhone) and (max-width: $mediumScreen) {
+    height: 110px;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
+    font-size: 18px;
+    height: 110px;
+  }
+
+  @media screen and (max-width: $portraitPhone) {
+    height: 100%;
+  }
+}
+
+.service-price {
+  font-family: $mainFont;
+  color: $light;
+  font-size: 28px;
+}
+
+.footnote {
+  width: 80%;
+  color: $light;
+  font-family: $mainFont;
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1;
+  text-align: center;
+}

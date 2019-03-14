@@ -4,6 +4,8 @@
 @import './my-cosmetics/my-cosmetics';
 @import './my-diplomas/my-diplomas';
 @import './my-works/my-works';
+@import './prices/prices';
+@import './feedback/feedback';
 
 .article-block {
   @include size(100%);

@@ -3,6 +3,7 @@
   align-items: flex-start;
   @include size(100%);
   padding-top: 30px;
+  margin-bottom: 20px;
 
   @media screen and (max-width: $portraitPhone) {
     flex-wrap: wrap;
