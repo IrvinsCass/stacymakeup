@@ -6,6 +6,8 @@
 @import './my-works/my-works';
 @import './prices/prices';
 @import './feedback/feedback';
+@import './blank-block/blank-block';
+@import './make-order/make-order';
 
 .article-block {
   @include size(100%);

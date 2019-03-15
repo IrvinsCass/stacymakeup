@@ -40,8 +40,8 @@
     <div class="why-me-block individual"><i class="fas fa-clipboard-list"></i>
       <p class="description">Подберу для вас подходящий и стойкий макияж.</p>
     </div>
-  </div><a href="#register">
-<button class="register-button">Записаться</button></a>
+  </div><a href="#make-order">
+  <button class="register-button">Записаться</button></a>
 </article>
 <article class="my-cosmetics article-block">
   <h2 class="article-header article-header_dark">Моя косметика</h2>
@@ -62,8 +62,8 @@
   <div class="my-diplomas__content">
     <div class="diploma"><img class="diploma-one" src="./assets/img/diploma1.png" alt="Школа макияжа"></div>
     <div class="diploma"><img class="diploma-two" src="./assets/img/diploma2.png" alt="Мастер-бровист"></div>
-  </div><a href="#register">
-<button class="register-button">Записаться</button></a>
+  </div><a href="#make-order">
+  <button class="register-button">Записаться</button></a>
 </article>
 <article class="my-works article-block"><a class="anchor-point" name="my-works"></a>
   <h2 class="article-header article-header_dark">Мои работы</h2>
@@ -78,7 +78,7 @@
     <div class="example"><a target="_blank" rel="noopener noreferrer" href="./assets/img/my-works/full-image/008.jpg"><img class="example-eight preview" src="./assets/img/my-works/008_preview.png" alt="Пример 8"></a></div>
   </div>
   <div class="my-works__footer">
-    <p class="instagram">Нужно больше  фотографий? Переходите на мой инстаграм</p><a href="#"><img class="instagram-logo" src="./assets/img/instagram.png" alt="Instagram"></a>
+    <p class="instagram">Нужно больше  фотографий? Переходите на мой инстаграм</p><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/stasy.makeup/"><img class="instagram-logo" src="./assets/img/instagram.png" alt="Instagram"></a>
   </div>
 </article>
 <article class="article-block prices"><a class="anchor-point" name="price"></a>
@@ -109,8 +109,8 @@
       <p class="prices-column__content">Макияж с дополнительной укладкой волос, который будет прекрасно смотреться на фото и видео. (Приблизительное время выполнения 2 часа на 1 человека)</p>
       <div class="service-price">3500р.</div>
     </div>
-  </div><a href="#register">
-<button class="register-button">Записаться</button></a>
+  </div><a href="#make-order">
+  <button class="register-button">Записаться</button></a>
   <p class="footnote">Все цены указаны с учетом выезда в пределах МКАД, ранний выезд и выезд в подмосковье обговаривается отдельно.</p>
 </article>
 <article class="article-block feedback"><a class="anchor-point" name="feedback"></a>
@@ -121,7 +121,49 @@
     <div class="feedback-item"><img class="feedback-image" src="./assets/img/feedback/003.png" alt="Отзыв"></div>
   </div>
 </article>
+<article class="article-block blank-block">
+  <div class="empty-line"></div>
+</article>
+<article class="article-block make-order"><a class="make-order__anchor" name="make-order"></a>
+  <h2 class="article-header article-header_dark">Записаться</h2>
+  <form class="make-order__content" action="" method="post">
+    <div class="make-order__name-field input-field">
+      <label class="input-field__label" for="name">Ваше имя<span class="star"> *</span><br>
+        <input class="input-field__text" type="text" id="name">
+      </label>
+    </div>
+    <div class="make-order__phone-field input-field">
+      <label class="input-field__label" for="phone">Телефон<span class="star"> *</span><br>
+        <input class="input-field__text" type="text" id="phone">
+      </label>
+    </div>
+    <div class="make-order__address-field input-field">
+      <label class="input-field__label" for="address">Адрес (улица, дом, кв./оф.)<span class="star"> *</span><br>
+        <input class="input-field__text" type="text" id="address">
+      </label>
+    </div>
+    <div class="make-order__time-field input-field">
+      <label class="input-field__label" for="time">Время (к которому Вы должны быть готовы)<span class="star"> *</span><br>
+        <input class="input-field__text" type="text" id="time">
+      </label>
+    </div>
+    <p class="make-order__footnote">Поля обязательного заполнения - <span class="star">*</span></p><br>
+    <div class="submit-field">
+      <input class="submit-field__button" type="submit">
+    </div>
+  </form>
+</article>
 </main>
-    <footer class="footer"></footer>
+<footer class="footer"><a class="anchor-point" name="contacts"></a>
+  <h2 class="article-header article-header_light">Контакты</h2>
+  <div class="footer__content">
+    <p class="phone">Телефон<br>+7-919-964-46-90</p>
+    <div class="messengers">
+      <div class="messenger whatsapp"><img class="messenger-icon" src="./assets/img/contacts/whatsapp.png" alt="Whats App"></div>
+      <div class="messenger viber"><img class="messenger-icon" src="./assets/img/contacts/viber.png" alt="Viber"></div>
+      <div class="messenger telegram"><img class="messenger-icon" src="./assets/img/contacts/telegram.png" alt="Telegram"></div>
+    </div>
+  </div>
+</footer>
   <script type="text/javascript" src="./static/js/index.js"></script></body>
 </html>

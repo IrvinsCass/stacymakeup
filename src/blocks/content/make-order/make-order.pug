@@ -1,0 +1,29 @@
+article.article-block.make-order
+  a(name="make-order").make-order__anchor
+  h2.article-header.article-header_dark Записаться
+  form(action="" method="post").make-order__content
+    .make-order__name-field.input-field
+      label(for="name").input-field__label Ваше имя
+        span.star  *
+        br
+        input(type="text", id="name").input-field__text
+    .make-order__phone-field.input-field
+      label(for="phone").input-field__label Телефон
+        span.star  *
+        br
+        input(type="text", id="phone").input-field__text
+    .make-order__address-field.input-field
+      label(for="address").input-field__label Адрес (улица, дом, кв./оф.)
+        span.star  *
+        br
+        input(type="text", id="address").input-field__text
+    .make-order__time-field.input-field
+      label(for="time").input-field__label Время (к которому Вы должны быть готовы)
+        span.star  *
+        br
+        input(type="text", id="time").input-field__text
+    p.make-order__footnote Поля обязательного заполнения - 
+      span.star *
+    br
+    .submit-field
+      input(type="submit").submit-field__button
