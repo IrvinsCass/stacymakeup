@@ -60,8 +60,8 @@
 <article class="my-diplomas article-block">
   <h2 class="article-header article-header_light">Мои дипломы</h2>
   <div class="my-diplomas__content">
-    <div class="diploma"><img class="diploma-one" src="./assets/img/diploma1.png" alt="Школа макияжа"></div>
-    <div class="diploma"><img class="diploma-two" src="./assets/img/diploma2.png" alt="Мастер-бровист"></div>
+    <div class="diploma"><a target="_blank" rel="noopener noreferrer" href="./assets/img/diplomas/diploma1-full.jpeg"><img class="diploma-one" src="./assets/img/diplomas/diploma1-preview.png" alt="Школа макияжа"></a></div>
+    <div class="diploma"><a target="_blank" rel="noopener noreferrer" href="./assets/img/diplomas/diploma2-full.jpeg"><img class="diploma-two" src="./assets/img/diplomas/diploma2-preview.png" alt="Мастер-бровист"></a></div>
   </div><a href="#make-order">
   <button class="register-button">Записаться</button></a>
 </article>
@@ -126,7 +126,7 @@
 </article>
 <article class="article-block make-order"><a class="make-order__anchor" name="make-order"></a>
   <h2 class="article-header article-header_dark">Записаться</h2>
-  <form class="make-order__content" action="" method="post">
+  <div class="make-order__content">
     <div class="make-order__name-field input-field">
       <label class="input-field__label" for="name">Ваше имя<span class="star"> *</span><br>
         <input class="input-field__text" type="text" id="name">
@@ -149,9 +149,9 @@
     </div>
     <p class="make-order__footnote">Поля обязательного заполнения - <span class="star">*</span></p><br>
     <div class="submit-field">
-      <input class="submit-field__button" type="submit">
+      <input class="submit-field__button" type="submit" id="submit">
     </div>
-  </form>
+  </div>
 </article>
 </main>
 <footer class="footer"><a class="anchor-point" name="contacts"></a>
