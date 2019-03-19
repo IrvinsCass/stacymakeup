@@ -23,8 +23,18 @@ module.exports = {
     path: PATHS.dist,
     publicPath: '/'
   },
+  node: {
+    fs: "empty",
+    net: 'empty',
+    tls: 'empty',
+  },
   module: {
     rules: [{
+      resolve: {
+      alias: {
+          querystring: 'querystring-browser'
+        }    
+    }},{
       test: /\.js$/,
       loader: 'babel-loader',
       exclude: '/node_modules/'
@@ -72,7 +82,7 @@ module.exports = {
               outputPath: `./fonts`
           }
       }]
-    }]
+    }],
   },
   plugins: [
     new miniCssExtractPlugin({

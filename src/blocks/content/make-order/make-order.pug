@@ -1,7 +1,7 @@
 article.article-block.make-order
   a(name="make-order").make-order__anchor
   h2.article-header.article-header_dark Записаться
-  form(action="" method="post").make-order__content
+  .make-order__content
     .make-order__name-field.input-field
       label(for="name").input-field__label Ваше имя
         span.star  *
@@ -26,4 +26,4 @@ article.article-block.make-order
       span.star *
     br
     .submit-field
-      input(type="submit").submit-field__button
+      input(type="submit" id="submit").submit-field__button
