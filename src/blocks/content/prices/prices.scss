@@ -6,30 +6,27 @@
 }
 
 .prices-column {
-  width: 19%;
+  width: 32%;
   @include flex(column);
-  margin: 0.5%;
+  margin: 0 0.5%;
+  margin-bottom: 22px;
 
   @media screen and (min-width: $mediumScreen) and (max-width: $largeScreen) {
     width: 32%;
-    margin-bottom: 22px;
   }
 
   @media screen and (min-width: $landscapePhone) and (max-width: $mediumScreen) {
     width: 32%;
-    margin-bottom: 22px;
   }
 
   @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
     width: 48%;
     border-bottom: 1px solid $light;
-    margin-bottom: 22px;
   }
 
   @media screen and (max-width: $portraitPhone) {
     width: 80%;
     border-bottom: 1px solid $light;
-    margin-bottom: 22px;
   }
 }
 
@@ -55,7 +52,7 @@
 
 .prices-column__content {
   margin-top: 15px;
-  height: 145px;
+  height: 90px;
   display: block;
   width: 90%;
   font-family: $mainFont;
@@ -76,7 +73,7 @@
 
   @media screen and (min-width: $portraitPhone) and (max-width: $landscapePhone) {
     font-size: 18px;
-    height: 110px;
+    height: 130px;
   }
 
   @media screen and (max-width: $portraitPhone) {

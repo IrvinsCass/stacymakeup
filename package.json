@@ -48,9 +48,9 @@
   },
   "homepage": "https://github.com/IrvinsCass/CV#readme",
   "dependencies": {
-    "@sendgrid/mail": "^6.3.1",
     "dotenv": "^7.0.0",
     "jquery-validation": "^1.19.0",
+    "node-mailjet": "^3.3.1",
     "popper.js": "^1.14.7",
     "querystring-browser": "^1.0.4"
   }

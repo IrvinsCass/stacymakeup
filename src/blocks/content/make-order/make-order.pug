@@ -6,22 +6,33 @@ article.article-block.make-order
       label(for="name").input-field__label Ваше имя
         span.star  *
         br
-        input(type="text", id="name").input-field__text
+        input(type="text", id="name" minlength="3" placeholder="Мария Антуанетта" required).input-field__text
     .make-order__phone-field.input-field
       label(for="phone").input-field__label Телефон
         span.star  *
         br
-        input(type="text", id="phone").input-field__text
+        input(type="tel", id="phone" minlength="3" placeholder="8 111 222 33 33" required).input-field__text
     .make-order__address-field.input-field
       label(for="address").input-field__label Адрес (улица, дом, кв./оф.)
         span.star  *
         br
-        input(type="text", id="address").input-field__text
+        input(type="text", id="address" minlength="3" placeholder="ул. Ленина 111, кв 22" required).input-field__text
     .make-order__time-field.input-field
-      label(for="time").input-field__label Время (к которому Вы должны быть готовы)
+      label(for="time").input-field__label День и время (к которому Вы должны быть готовы)
         span.star  *
         br
-        input(type="text", id="time").input-field__text
+        input(type="text", id="time" minlength="3" placeholder="1 мая, 14-00" required).input-field__text
+    .make-order__time-field.input-field
+      label(for="order").input-field__label Вид услуги
+        span.star  *
+        select(name="" id="order" required).input-field__select
+          option(value="" disabled selected).disabled Выберите услугу
+          option(value="Вечерний макияж") Вечерний макияж
+          option(value="Вечерний макияж с локонами") Вечерний макияж с локонами
+          option(value="Свадебный макияж с репетицией") Свадебный макияж с репетицией
+          option(value="Макияж для съемки") Макияж для съемки
+          option(value="Макияж с локонами для съемки") Макияж с локонами для съемки
+          option(value="Курс обучения 'Макияж для себя'") Курс обучения "Макияж для себя"
     p.make-order__footnote Поля обязательного заполнения - 
       span.star *
     br
