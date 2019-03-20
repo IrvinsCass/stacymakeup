@@ -87,27 +87,32 @@
     <div class="prices-column">
       <h3 class="prices-column__header">Вечерний макияж</h3>
       <p class="prices-column__content">Яркий макияж для вечеринки. (Приблизительное время выполнения 1:30 часа на 1 человека)</p>
-      <div class="service-price">2500р.</div>
+      <div class="service-price">2500 р.</div>
     </div>
     <div class="prices-column">
       <h3 class="prices-column__header">Вечерний макияж с локонами</h3>
-      <p class="prices-column__content">Яркий макияж для вечеринки с дополнительной укладкой волос. (Приблизительное время выполнения 2 часа на 1 человека</p>
-      <div class="service-price">3000р.</div>
+      <p class="prices-column__content">Яркий макияж для вечеринки с дополнительной укладкой волос. (Приблизительное время выполнения 2 часа на 1 человека)</p>
+      <div class="service-price">3000 р.</div>
     </div>
     <div class="prices-column">
       <h3 class="prices-column__header">Свадебный макияж с репетицией</h3>
       <p class="prices-column__content">Стойкий и элегантный макияж для невесты. (Приблизительное время выполнения 1:30 часа.)</p>
-      <div class="service-price">6000р.</div>
+      <div class="service-price">6000 р.</div>
     </div>
     <div class="prices-column">
       <h3 class="prices-column__header">Макияж для съемки</h3>
-      <p class="prices-column__content">Макияж, который будет прекрасно смотреться на фото и видео. (Приблизительное время выполнения1:30 часа на 1 человека)</p>
-      <div class="service-price">3000р.</div>
+      <p class="prices-column__content">Макияж, который будет прекрасно смотреться на фото и видео. (Приблизительное время выполнения 1:30 часа на 1 человека)</p>
+      <div class="service-price">3000 р.</div>
     </div>
     <div class="prices-column">
       <h3 class="prices-column__header">Макияж с локонами для съемки </h3>
       <p class="prices-column__content">Макияж с дополнительной укладкой волос, который будет прекрасно смотреться на фото и видео. (Приблизительное время выполнения 2 часа на 1 человека)</p>
-      <div class="service-price">3500р.</div>
+      <div class="service-price">3500 р.</div>
+    </div>
+    <div class="prices-column">
+      <h3 class="prices-column__header">Курс обучения "Макияж для себя" </h3>
+      <p class="prices-column__content">Краткий курс обучения, с помощью которого Вы сможете выполнить макияж, который подойдёт только для вас. (Приблизительное время обучения 5 часов для 1 человека) </p>
+      <div class="service-price">5000 р.</div>
     </div>
   </div><a href="#make-order">
   <button class="register-button">Записаться</button></a>
@@ -129,22 +134,35 @@
   <div class="make-order__content">
     <div class="make-order__name-field input-field">
       <label class="input-field__label" for="name">Ваше имя<span class="star"> *</span><br>
-        <input class="input-field__text" type="text" id="name">
+        <input class="input-field__text" type="text" id="name" minlength="3" placeholder="Мария Антуанетта" required>
       </label>
     </div>
     <div class="make-order__phone-field input-field">
       <label class="input-field__label" for="phone">Телефон<span class="star"> *</span><br>
-        <input class="input-field__text" type="text" id="phone">
+        <input class="input-field__text" type="tel" id="phone" minlength="3" placeholder="8 111 222 33 33" required>
       </label>
     </div>
     <div class="make-order__address-field input-field">
       <label class="input-field__label" for="address">Адрес (улица, дом, кв./оф.)<span class="star"> *</span><br>
-        <input class="input-field__text" type="text" id="address">
+        <input class="input-field__text" type="text" id="address" minlength="3" placeholder="ул. Ленина 111, кв 22" required>
       </label>
     </div>
     <div class="make-order__time-field input-field">
-      <label class="input-field__label" for="time">Время (к которому Вы должны быть готовы)<span class="star"> *</span><br>
-        <input class="input-field__text" type="text" id="time">
+      <label class="input-field__label" for="time">День и время (к которому Вы должны быть готовы)<span class="star"> *</span><br>
+        <input class="input-field__text" type="text" id="time" minlength="3" placeholder="1 мая, 14-00" required>
+      </label>
+    </div>
+    <div class="make-order__time-field input-field">
+      <label class="input-field__label" for="order">Вид услуги<span class="star"> *</span>
+        <select class="input-field__select" name="" id="order" required>
+          <option class="disabled" value="" disabled selected>Выберите услугу</option>
+          <option value="Вечерний макияж">Вечерний макияж</option>
+          <option value="Вечерний макияж с локонами">Вечерний макияж с локонами</option>
+          <option value="Свадебный макияж с репетицией">Свадебный макияж с репетицией</option>
+          <option value="Макияж для съемки">Макияж для съемки</option>
+          <option value="Макияж с локонами для съемки">Макияж с локонами для съемки</option>
+          <option value="Курс обучения 'Макияж для себя'">Курс обучения "Макияж для себя"</option>
+        </select>
       </label>
     </div>
     <p class="make-order__footnote">Поля обязательного заполнения - <span class="star">*</span></p><br>
@@ -165,5 +183,6 @@
     </div>
   </div>
 </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script type="text/javascript" src="./static/js/index.js"></script></body>
 </html>
